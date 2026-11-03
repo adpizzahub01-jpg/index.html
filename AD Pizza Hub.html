@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AD Pizza Hub – Pizza Near Me | Takeaway &amp; Delivery</title>
+<meta name="description" content="AD Pizza Hub: freshly prepared pizzas for takeaway and delivery. Browse the menu, build your order and send it on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=DM+Sans:wght@400;500;700&display=swap">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"AD Pizza Hub","servesCuisine":"Pizza","hasMenu":"#menu","hasMap":"https://maps.app.goo.gl/Me3R1hJeXoHyn1FZA?g_st=ac"}</script>
+<style>
+:root{--red:#C8261E;--orange:#F28C28;--cream:#FFF6E8;--char:#231F1C;--bg:var(--cream);--card:#fff;--tx:var(--char);--mut:#6b6159;--line:#ecdcc4;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1815;--card:#2a2521;--tx:#fff3e2;--mut:#bdae9d;--line:#3d352e}}
+:root[data-theme="dark"]{--bg:#1b1815;--card:#2a2521;--tx:#fff3e2;--mut:#bdae9d;--line:#3d352e}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 "DM Sans",system-ui,sans-serif}
+h1,h2,h3,.logo{font-family:"Bagel Fat One","Arial Black",sans-serif;font-weight:400;line-height:1.05;margin:0}
+a{color:inherit}
+button,select,input{font:inherit}
+:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+section{padding:56px 0}
+h2{font-size:clamp(28px,6vw,42px);margin-bottom:8px}
+.sub{color:var(--mut);margin:0 0 24px;max-width:56ch}
+header{position:sticky;top:0;z-index:20;background:var(--char);color:var(--cream)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:58px}
+.logo{font-size:24px;text-decoration:none;color:var(--cream)}.logo b{color:var(--orange);font-weight:400}
+nav{display:flex;gap:14px;align-items:center;font-size:15px}nav a{text-decoration:none;opacity:.9}
+.cartbtn{background:var(--orange);color:var(--char);border:0;border-radius:99px;padding:8px 14px;font-weight:700;cursor:pointer;min-height:40px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:99px;border:2px solid transparent;font-weight:700;text-decoration:none;cursor:pointer}
+.b1{background:var(--red);color:#fff}.b2{background:#25D366;color:#10321d}.b3{border-color:currentColor;background:transparent;color:inherit}
+.hero{background:var(--char);color:var(--cream);padding:40px 0 56px;overflow:hidden}
+.hero .wrap{display:grid;gap:28px;align-items:center}
+.hero h1{font-size:clamp(38px,9vw,72px)}.hero h1 span{display:block;color:var(--orange)}
+.hero p{font-size:18px;max-width:46ch;opacity:.9}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.hero svg{width:min(88vw,440px);margin:auto;display:block;animation:spin 60s linear infinite;filter:drop-shadow(0 18px 24px #0008)}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(min-width:800px){.hero .wrap{grid-template-columns:1.1fr .9fr}}
+.notice{background:#fff3c4;color:#4a3a00;border-radius:12px;padding:12px 14px;font-size:14px;margin-bottom:20px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;margin-bottom:18px}
+.chips button{flex:none;border:2px solid var(--line);background:var(--card);color:var(--tx);border-radius:99px;padding:8px 16px;min-height:44px;cursor:pointer;font-weight:500}
+.chips button[aria-pressed=true]{background:var(--red);border-color:var(--red);color:#fff}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.thumb{background:linear-gradient(135deg,#fde2b8,#f7b267);display:grid;place-items:center;padding:14px}
+.thumb svg{width:130px}
+.cb{padding:14px;display:flex;flex-direction:column;gap:8px;flex:1}
+.cb h3{font-size:21px}.cb p{margin:0;color:var(--mut);font-size:14px;flex:1}
+.veg{display:inline-block;width:16px;height:16px;border:2px solid #1c8a3a;border-radius:3px;position:relative;vertical-align:middle;margin-right:6px}
+.veg::after{content:"";position:absolute;inset:3px;border-radius:50%;background:#1c8a3a}
+.veg.nv{border-color:#b3261e}.veg.nv::after{background:#b3261e}
+.row{display:flex;gap:8px;align-items:center;justify-content:space-between}
+select,input{width:100%;min-height:46px;border:2px solid var(--line);border-radius:12px;background:var(--card);color:var(--tx);padding:0 12px}
+.price{font-weight:700;font-size:20px;white-space:nowrap}
+.add{background:var(--char);color:var(--cream);border:0;border-radius:12px;min-height:46px;padding:0 16px;font-weight:700;cursor:pointer;white-space:nowrap}
+.add:active,.btn:active{transform:scale(.97)}
+.add.ok{background:#1c8a3a}
+.about{background:var(--red);color:#fff}.about .sub{color:#ffe7d0}
+.gal{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
+@media(min-width:700px){.gal{grid-template-columns:repeat(4,1fr)}}
+.gal figure{margin:0;border-radius:16px;overflow:hidden;background:linear-gradient(135deg,#fde2b8,#f4a259);padding:12px;text-align:center}
+.gal svg{width:100%;max-width:150px}.gal figcaption{font-size:13px;color:#4a2a12}
+.info{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.box{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
+.box h3{font-size:20px;margin-bottom:6px}.todo{background:#fff3c4;color:#4a3a00;border-radius:6px;padding:1px 6px;font-size:14px}
+footer{background:var(--char);color:var(--cream);padding:28px 0 90px;font-size:14px}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:25;display:flex;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:var(--char)}
+.sticky .btn{flex:1;min-height:50px}
+@media(min-width:800px){.sticky{display:none}footer{padding-bottom:28px}}
+#drawer{position:fixed;inset:0;z-index:40;display:none}
+#drawer.open{display:block}
+.scrim{position:absolute;inset:0;background:#0009}
+.panel{position:absolute;right:0;top:0;bottom:0;width:min(440px,100%);background:var(--bg);overflow:auto;padding:18px 18px calc(24px + env(safe-area-inset-bottom,0px));padding-top:calc(18px + env(safe-area-inset-top,0px));animation:slide .25s ease-out}
+@keyframes slide{from{transform:translateX(30px);opacity:0}}
+.line{display:grid;grid-template-columns:1fr auto;gap:6px;padding:12px 0;border-bottom:1px solid var(--line)}
+.qty{display:flex;align-items:center;gap:6px}
+.qty button{width:40px;height:40px;border-radius:50%;border:2px solid var(--line);background:var(--card);color:var(--tx);font-size:18px;cursor:pointer}
+.rm{background:none;border:0;color:var(--red);text-decoration:underline;cursor:pointer;padding:6px 0;text-align:left}
+.f{display:grid;gap:10px;margin-top:14px}.err{color:#b3261e;font-size:14px;min-height:18px;margin:0}
+.seg{display:flex;gap:8px}.seg label{flex:1;border:2px solid var(--line);border-radius:12px;padding:10px;text-align:center;cursor:pointer}
+.seg input{position:absolute;opacity:0;width:1px;height:1px}.seg label:has(input:checked){border-color:var(--red);background:var(--red);color:#fff}
+.seg label:has(input:focus-visible){outline:3px solid var(--orange)}
+.tot{display:flex;justify-content:space-between;font-size:20px;font-weight:700;margin-top:14px}
+@media(prefers-reduced-motion:reduce){.hero svg,.panel{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="pz" viewBox="0 0 200 200"><circle cx="100" cy="100" r="98" fill="#D9822B"/><circle cx="100" cy="100" r="88" fill="#C8261E"/><circle cx="100" cy="100" r="82" fill="var(--ch,#F8D56B)"/>
+<g fill="var(--t1,#C8261E)"><circle cx="70" cy="62" r="13"/><circle cx="128" cy="76" r="13"/><circle cx="92" cy="128" r="13"/><circle cx="145" cy="130" r="11"/><circle cx="55" cy="108" r="10"/></g>
+<g fill="var(--t2,#2f8f3a)"><circle cx="105" cy="45" r="7"/><circle cx="48" cy="82" r="6"/><circle cx="118" cy="104" r="7"/><circle cx="76" cy="150" r="7"/><circle cx="140" cy="55" r="6"/></g>
+<path d="M100 100 L100 20 M100 100 L170 60 M100 100 L170 140 M100 100 L100 180 M100 100 L30 140 M100 100 L30 60" stroke="#0002" stroke-width="2"/></symbol></defs></svg>
+
+<header><div class="wrap"><a class="logo" href="#top" aria-label="AD Pizza Hub home">AD <b>Pizza</b> Hub</a>
+<nav><a href="#menu">Menu</a><a href="#visit" class="hide-s">Visit</a><button class="cartbtn" id="open" aria-label="Open cart">Cart (<span id="cnt">0</span>)</button></nav></div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap"><div>
+<h1>Your Pizza Cravings, <span>Our Delicious Creations!</span></h1>
+<p>Freshly prepared, loaded with flavour, and made for every pizza lover.</p>
+<div class="cta"><a class="btn b1" href="#menu">Explore Our Menu</a><a class="btn b2" id="waHero" href="#" target="_blank" rel="noopener">Order on WhatsApp</a><a class="btn b3" href="https://maps.app.goo.gl/Me3R1hJeXoHyn1FZA?g_st=ac" target="_blank" rel="noopener">Get Directions</a></div></div>
+<svg viewBox="0 0 200 200" role="img" aria-label="Illustration of a loaded pizza"><use href="#pz" style="--ch:#F8D56B;--t1:#B3261E;--t2:#2f8f3a"/></svg></div></div>
+
+<section id="menu"><div class="wrap"><h2>Our menu</h2>
+<p class="sub">Pick a size, add to cart, then send your order on WhatsApp.</p>
+<div class="notice"><b>Sample menu.</b> Items and prices below are placeholders. The owner must replace them in the MENU list at the top of the page script before launch.</div>
+<div class="chips" id="chips" role="group" aria-label="Menu categories"></div><div class="grid" id="grid"></div></div></section>
+
+<section class="about"><div class="wrap"><h2>About AD Pizza Hub</h2>
+<p class="sub">AD Pizza Hub is a pizza restaurant serving takeaway and delivery to local pizza lovers. Browse the menu, choose your favourites and send your order straight to us on WhatsApp.</p>
+<p class="sub"><span class="todo">Owner to add:</span> your story, ingredients and preparation details. Only verified claims should appear here.</p></div></section>
+
+<section><div class="wrap"><h2>Gallery</h2>
+<p class="sub">Illustrations of our style of pizza. These are not photographs of the restaurant.</p>
+<div class="gal" id="gal"></div></div></section>
+
+<section id="visit"><div class="wrap"><h2>Find us</h2><p class="sub">Open the map for directions to AD Pizza Hub.</p>
+<div class="info">
+<div class="box"><h3>Location</h3><p><span class="todo">Owner to add:</span> verified street address</p><a class="btn b1" href="https://maps.app.goo.gl/Me3R1hJeXoHyn1FZA?g_st=ac" target="_blank" rel="noopener">Get Directions</a></div>
+<div class="box"><h3>Opening hours</h3><p><span class="todo">Owner to add:</span> opening hours</p></div>
+<div class="box"><h3>Contact</h3><p><span class="todo">Owner to add:</span> phone number and social links</p><a class="btn b2" id="waContact" href="#" target="_blank" rel="noopener">Message on WhatsApp</a></div>
+</div></div></section>
+
+<section><div class="wrap"><h2>Customer reviews</h2>
+<p class="sub">Eaten with us? Tell others what you thought.</p>
+<a class="btn b1" href="https://maps.app.goo.gl/Me3R1hJeXoHyn1FZA?g_st=ac" target="_blank" rel="noopener">Leave a review on Google Maps</a></div></section>
+</main>
+
+<footer><div class="wrap">© AD Pizza Hub. Menu, prices and delivery availability are confirmed by the restaurant when you send your order.</div></footer>
+
+<div class="sticky"><a class="btn b2" id="waSticky" href="#" target="_blank" rel="noopener">WhatsApp</a><button class="btn b1" id="open2">View cart</button></div>
+
+<div id="drawer" role="dialog" aria-modal="true" aria-label="Your order"><div class="scrim" id="scrim"></div>
+<div class="panel"><div class="row"><h2 style="font-size:30px;margin:0">Your order</h2><button class="qty" style="background:none;border:0;font-size:28px;color:inherit;cursor:pointer" id="close" aria-label="Close cart">×</button></div>
+<div id="lines"></div><div class="tot"><span>Subtotal</span><span id="sub">₹0</span></div>
+<p class="sub" style="font-size:13px;margin-top:4px">Delivery charges (if any) and final total are confirmed by the restaurant.</p>
+<div class="f"><div class="seg" id="mode"><label><input type="radio" name="m" value="Pickup" checked>Pickup</label><label><input type="radio" name="m" value="Delivery">Delivery</label></div>
+<input id="nm" placeholder="Your name" autocomplete="name" aria-label="Your name"><input id="ph" placeholder="Phone (10 digits)" inputmode="tel" autocomplete="tel" aria-label="Phone number">
+<textarea id="ad" placeholder="Delivery address" aria-label="Delivery address" hidden style="min-height:70px;border:2px solid var(--line);border-radius:12px;background:var(--card);color:var(--tx);padding:10px;font:inherit"></textarea>
+<p class="err" id="err" role="alert"></p>
+<button class="btn b2" id="send">Prepare WhatsApp order</button>
+<p class="sub" style="font-size:13px">This opens WhatsApp with your order written out. Your order is not placed until the restaurant confirms it.</p></div></div></div>
+
+<script>
+/* ===== OWNER SETTINGS: edit this block ===== */
+const CONFIG={
+  whatsapp:"",            // e.g. "919XXXXXXXXX" (country code + number, no + or spaces). Empty = WhatsApp opens with a chooser.
+  pickup:true,
+  delivery:true           // set false if the restaurant does not deliver
+};
+const MENU=[ // SAMPLE DATA. Replace names, prices (₹), sizes and availability. available:false hides an item.
+{id:"m1",cat:"Classic Pizzas",name:"Margherita",desc:"Tomato sauce and mozzarella.",veg:1,available:true,sizes:[["Regular",149],["Medium",249],["Large",349]],c:["#F8D56B","#fff3d6","#2f8f3a"]},
+{id:"m2",cat:"Classic Pizzas",name:"Onion Capsicum",desc:"Crunchy onion and capsicum on a cheesy base.",veg:1,available:true,sizes:[["Regular",169],["Medium",269],["Large",369]],c:["#F8D56B","#8ec06c","#7a3fa0"]},
+{id:"m3",cat:"Classic Pizzas",name:"Chicken Classic",desc:"Seasoned chicken with mozzarella.",veg:0,available:true,sizes:[["Regular",199],["Medium",299],["Large",399]],c:["#F8D56B","#b5651d","#fff3d6"]},
+{id:"m4",cat:"Cheese Pizzas",name:"Extra Cheese",desc:"Double mozzarella, generously melted.",veg:1,available:true,sizes:[["Regular",189],["Medium",289],["Large",389]],c:["#FBE08A","#FBE08A","#fff3d6"]},
+{id:"m5",cat:"Cheese Pizzas",name:"Four Cheese",desc:"A blend of four cheeses.",veg:1,available:true,sizes:[["Regular",219],["Medium",319],["Large",419]],c:["#FBE08A","#f6b73c","#fff3d6"]},
+{id:"m6",cat:"Veggie Pizzas",name:"Veggie Delight",desc:"Onion, capsicum, tomato and sweet corn.",veg:1,available:true,sizes:[["Regular",179],["Medium",279],["Large",379]],c:["#F8D56B","#e8b422","#2f8f3a"]},
+{id:"m7",cat:"Veggie Pizzas",name:"Paneer Tikka",desc:"Spiced paneer, onion and capsicum.",veg:1,available:true,sizes:[["Regular",209],["Medium",309],["Large",409]],c:["#F8D56B","#f2a45a","#2f8f3a"]},
+{id:"m8",cat:"Special Pizzas",name:"AD Special Loaded",desc:"Our loaded signature pizza. Owner to add toppings.",veg:0,available:true,sizes:[["Regular",249],["Medium",349],["Large",449]],c:["#F8D56B","#B3261E","#2f8f3a"]},
+{id:"m9",cat:"Special Pizzas",name:"BBQ Chicken",desc:"Chicken in smoky barbecue sauce.",veg:0,available:true,sizes:[["Regular",239],["Medium",339],["Large",439]],c:["#F8D56B","#7b3a14","#e8b422"]},
+{id:"m10",cat:"Sides and Beverages",name:"Garlic Bread",desc:"Toasted with garlic butter.",veg:1,available:true,sizes:[["Serving",99]],c:["#e9b872","#f4d9a3","#2f8f3a"]},
+{id:"m11",cat:"Sides and Beverages",name:"French Fries",desc:"Crisp and salted.",veg:1,available:true,sizes:[["Serving",89]],c:["#f2c14e","#f2c14e","#f8d56b"]},
+{id:"m12",cat:"Sides and Beverages",name:"Cold Drink",desc:"Chilled soft drink. Owner to list brands.",veg:1,available:true,sizes:[["Bottle",49]],c:["#9a4a1e","#5b2a10","#fff3d6"]}
+];
+/* ===== end owner settings ===== */
+const $=s=>document.querySelector(s),inr=n=>"₹"+n.toLocaleString("en-IN");
+const cart=new Map();let cat="All";
+function wa(text){return "https://wa.me/"+CONFIG.whatsapp+(text?"?text="+encodeURIComponent(text):"")}
+const hi="Hi AD Pizza Hub, I have a question about your menu.";
+["waHero","waContact","waSticky"].forEach(i=>$("#"+i).href=wa(hi));
+if(!CONFIG.delivery){$('#mode input[value=Delivery]').parentElement.remove()}
+if(!CONFIG.pickup){$('#mode input[value=Pickup]').parentElement.remove();const d=$('#mode input');if(d)d.checked=true}
+const cats=["All",...new Set(MENU.map(m=>m.cat))];
+$("#chips").innerHTML=cats.map(c=>`<button aria-pressed="${c===cat}" data-c="${c}">${c}</button>`).join("");
+$("#chips").onclick=e=>{const b=e.target.closest("button");if(!b)return;cat=b.dataset.c;[...$("#chips").children].forEach(x=>x.setAttribute("aria-pressed",x===b));render()};
+function render(){
+  $("#grid").innerHTML=MENU.filter(m=>m.available&&(cat==="All"||m.cat===cat)).map(m=>`
+  <article class="card"><div class="thumb"><svg viewBox="0 0 200 200" role="img" aria-label="${m.name} illustration"><use href="#pz" style="--ch:${m.c[0]};--t1:${m.c[1]};--t2:${m.c[2]}"/></svg></div>
+  <div class="cb"><h3><span class="veg ${m.veg?"":"nv"}" title="${m.veg?"Vegetarian":"Non-vegetarian"}"></span>${m.name}</h3><p>${m.desc}</p>
+  <div class="row"><select aria-label="Size for ${m.name}" data-s="${m.id}">${m.sizes.map((s,i)=>`<option value="${i}">${s[0]} · ${inr(s[1])}</option>`).join("")}</select></div>
+  <div class="row"><span class="price" id="p-${m.id}">${inr(m.sizes[0][1])}</span><button class="add" data-a="${m.id}">Add to cart</button></div></div></article>`).join("");
+}
+$("#grid").addEventListener("change",e=>{const s=e.target.closest("select");if(s){const m=MENU.find(x=>x.id===s.dataset.s);$("#p-"+m.id).textContent=inr(m.sizes[s.value][1])}});
+$("#grid").addEventListener("click",e=>{const b=e.target.closest(".add");if(!b)return;
+  const m=MENU.find(x=>x.id===b.dataset.a),i=$(`[data-s=${m.id}]`).value,k=m.id+"|"+i,sz=m.sizes[i];
+  const it=cart.get(k)||{name:m.name,size:sz[0],price:sz[1],q:0,veg:m.veg};it.q++;cart.set(k,it);upd();
+  b.textContent="Added ✓";b.classList.add("ok");setTimeout(()=>{b.textContent="Add to cart";b.classList.remove("ok")},900)});
+function total(){let t=0,n=0;cart.forEach(i=>{t+=i.price*i.q;n+=i.q});return[t,n]}
+function upd(){const[t,n]=total();$("#cnt").textContent=n;$("#sub").textContent=inr(t);
+  $("#lines").innerHTML=cart.size?[...cart].map(([k,i])=>`<div class="line"><div><b>${i.name}</b><br><small>${i.size} · ${inr(i.price)}</small><br><button class="rm" data-r="${k}">Remove</button></div>
+  <div style="text-align:right"><div class="qty"><button data-d="-1|${k}" aria-label="Decrease ${i.name}">−</button><b>${i.q}</b><button data-d="1|${k}" aria-label="Increase ${i.name}">+</button></div><b>${inr(i.price*i.q)}</b></div></div>`).join(""):'<p class="sub" style="margin-top:16px">Your cart is empty. Add a pizza from the menu.</p>'}
+$("#lines").onclick=e=>{const r=e.target.closest("[data-r]"),d=e.target.closest("[data-d]");
+  if(r)cart.delete(r.dataset.r);if(d){const[x,k]=d.dataset.d.split("|"),i=cart.get(k);i.q+=+x;if(i.q<1)cart.delete(k)}upd()};
+const dr=$("#drawer"),open=()=>{dr.classList.add("open");$("#close").focus()},close=()=>dr.classList.remove("open");
+$("#open").onclick=open;$("#open2").onclick=open;$("#close").onclick=close;$("#scrim").onclick=close;
+document.addEventListener("keydown",e=>{if(e.key==="Escape")close()});
+$("#mode").onchange=()=>{$("#ad").hidden=document.querySelector("#mode input:checked").value!=="Delivery"};
+$("#send").onclick=()=>{const er=$("#err"),nm=$("#nm").value.trim(),ph=$("#ph").value.replace(/[\s-]/g,"").replace(/^(\+91|91)(?=\d{10}$)/,""),mode=document.querySelector("#mode input:checked").value,ad=$("#ad").value.trim();
+  if(!cart.size)return er.textContent="Add at least one item to your cart.";
+  if(nm.length<2)return er.textContent="Enter your name.";
+  if(!/^[6-9]\d{9}$/.test(ph))return er.textContent="Enter a valid 10-digit mobile number.";
+  if(mode==="Delivery"&&ad.length<8)return er.textContent="Enter your full delivery address.";
+  er.textContent="";const[t]=total();
+  const L=[...cart.values()].map(i=>`• ${i.q} x ${i.name} (${i.size}) – ${inr(i.price*i.q)}`);
+  const msg=`Hi AD Pizza Hub, I'd like to order:\n${L.join("\n")}\n\nSubtotal: ${inr(t)}\nType: ${mode}${mode==="Delivery"?"\nAddress: "+ad:""}\nName: ${nm}\nPhone: ${ph}\n\nPlease confirm availability and the final total.`;
+  window.open(wa(msg),"_blank","noopener")};
+$("#gal").innerHTML=[["Classic","#F8D56B","#C8261E","#2f8f3a"],["Cheese pull","#FBE08A","#FBE08A","#f6b73c"],["Loaded toppings","#F8D56B","#B3261E","#e8b422"],["Veggie","#F8D56B","#8ec06c","#7a3fa0"]].map(g=>`<figure><svg viewBox="0 0 200 200" role="img" aria-label="${g[0]} pizza illustration"><use href="#pz" style="--ch:${g[1]};--t1:${g[2]};--t2:${g[3]}"/></svg><figcaption>${g[0]} (illustration)</figcaption></figure>`).join("");
+render();upd();
+</script>
+</body>
+</html>
